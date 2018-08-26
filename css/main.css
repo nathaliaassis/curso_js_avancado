@@ -1,0 +1,11 @@
+body{
+    margin: 10px;
+}
+
+.form-control, button{
+    margin: 5px;
+}
+
+#btnUpdate, #errors{
+    display: none;
+}

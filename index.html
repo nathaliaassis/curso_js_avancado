@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+ 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Shopping Control</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+        <a id="nav-title" class="navbar-brand" href="index.hmtl"></a>
+    </nav>
+    <div class="container">
+		<div class="form-inline">
+			<div class="form-group">
+			 	<input type="text" class="form-control" id="desc" placeholder="Description">
+			</div>
+			<div class="form-group">
+			 	<input type="text" class="form-control" id="amount" placeholder="Amount">
+			</div>
+			<div class="form-group">
+			 	<input type="text" class="form-control" id="value" placeholder="Value">
+			</div>
+			<span id="btnUpdate">
+				<span id="inputIdUpdate">
+				</span>
+				<button onclick="updateData()" class="btn btn-primary">Save</button>
+				<button onclick="resetForm()" class="btn btn-danger">Cancel</button>
+			</span>
+			<button id="btn-add" onclick="addData()" class="btn btn-info">Add</button>
+		</div> <br>
+		<div class="alert alert-danger" id="errors" role="alert">	</div>
+		<table id="list-table" class="table">
+			
+		</table>
+	</div>
+	<nav class="navbar navbar-dark bg-dark fixed-bottom">
+		<div class="container">
+			<h4 class="text-center text-success">Total: <span id="totalValue">$ 0,00</span></h4>
+		</div>
+	</nav>
+
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
