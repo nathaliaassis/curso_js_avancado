@@ -27,9 +27,14 @@
 				<span id="inputIdUpdate">
 				</span>
 				<button onclick="updateData()" class="btn btn-primary">Save</button>
-				<button onclick="resetForm()" class="btn btn-danger">Cancel</button>
+				<button onclick="resetForm();" class="btn btn-danger">Cancel</button>
 			</span>
-			<button id="btn-add" onclick="addData()" class="btn btn-info">Add</button>
+			<span id="btn-add">
+				<button  onclick="addData()" class="btn btn-info">Add</button>
+				<button onclick="resetForm()" class="btn btn-warning">Reset</button>
+				<button onclick="deleteList()" class="btn btn-danger">Delete</button>
+			</span>
+			
 		</div> <br>
 		<div class="alert alert-danger" id="errors" role="alert">	</div>
 		<table id="list-table" class="table">
