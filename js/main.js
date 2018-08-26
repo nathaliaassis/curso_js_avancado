@@ -26,7 +26,7 @@ function setList(list){
 
     document.getElementById('list-table').innerHTML = table;
     getTotal(list);
-    saveListStorage(list)
+    saveListStorage(list);
 }
 
 function formatDesc(desc){
